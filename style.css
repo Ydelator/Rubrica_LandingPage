@@ -161,6 +161,7 @@ body{
     background-image: url(images/Rectangle\ 13.png);
     background-repeat: no-repeat;
     background-position: right;
+    margin-top: 100px;
 }
 
 .header-card-div {
@@ -223,6 +224,155 @@ body{
     margin-left: 30px;
 }
 
+
+@media only screen and (min-width:768px){
+    .card-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        margin-bottom: 100px;
+        background-image: url(images/Rectangle\ 13.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-top: 100px;
+    }
+    
+    .header-card-div {
+        display: flex;
+        grid-column: 1/3;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    
+    .header-card-div p{
+        width: 40%;
+        margin-right: -50px;
+    }
+    
+    .header-card-div h1{
+        width: 40%;
+        margin-left: -50px;
+    }
+    
+    
+    .body-card-div{
+        display: flex;
+        flex-direction: row;
+        grid-column: 1/3;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .card{
+        
+        background-color: #ffff;
+        width: 430px;
+        border-radius: 10px;
+        text-align: center;
+        
+    }
+    
+    .card-footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 95%;
+        height: 18%;
+        
+    }
+    
+    .card button{
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 5px;
+        font-size: 10px;
+        height: 20px;
+        margin-top: 20px;
+    }
+    .card h4{
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width:480px){
+    .card-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        margin-bottom: 100px;
+        background-image: url(images/Rectangle\ 13.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-top: 100px;
+        background-size: 3000px;
+    }
+    
+
+    .header-card-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        grid-column: 1/3;
+        grid-row: 1;
+        width: 100%;
+
+    }
+    .header-card-div h1{
+        width: 100%;
+        width: 95%;
+        margin-left: 10px;
+        text-align: center;
+
+    }
+    .header-card-div p{
+        width: 95%;
+        text-align: justify;
+        padding: .5em;
+        
+    }
+
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+    .card-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        margin-bottom: 100px;
+        background-image: url(images/Rectangle\ 13.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-top: 100px;
+        background-size: 3000px;
+    }
+    
+
+    .header-card-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        grid-column: 1/3;
+        grid-row: 1;
+        width: 100%;
+
+    }
+    .header-card-div h1{
+        width: 100%;
+        width: 95%;
+        margin-left: 10px;
+        text-align: center;
+
+    }
+    .header-card-div p{
+        width: 95%;
+        text-align: justify;
+        padding: .5em;
+        
+    }
+}
+
 .last-div{
     margin-top: 100px;
     display: grid;
@@ -234,7 +384,7 @@ body{
 .tittle-last-div{
     grid-column: 1/3;
     text-align: center;
-    justify-content: cent;
+    justify-content: center;
 }
 
 .body-text-div{
@@ -245,16 +395,42 @@ body{
     justify-content: space-evenly;
 }
 
+@media only screen and (max-width:480px){
+    .body-text-div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+    .text-card{
+        text-align: justify;
+        margin-bottom: 40px;
+        width: 130%;
+    
+    }
+    .last-div{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr;
+        margin-bottom: 100px;
+    }
+    
+}
+
 .text-card{
     width: 30%;
     text-align: justify;
     margin-bottom: 40px;
 
+
 }
 
 .footer-div-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     color: #fff;
     background-image: url(images/Rectangle\ 39.png);
     background-repeat: no-repeat;
@@ -262,33 +438,71 @@ body{
 }
 
 .footer-left-div{
+    display: flex;
+    flex-direction: column;
     width: 50%;
     padding-bottom: 30px;
-    
 
 }
 
-.footer-right-div{
+.footer-right-div form .block{
+  grid-row: 3/5;
+}
+
+.footer-right-div form{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 0.3fr);
-    width: 60%;
-    gap: 20px;
+    grid-template-rows: repeat(5, 0.5fr);
+    gap: 30px;
 }
 .footer-right-div button{
     background-color: orange;
 }
 
-.description{
-    grid-row: 3/5;
+.footer-right-div form button,
+.footer-right-div form input,
+.footer-right-div form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
 }
 
-.div-footer-form{
-    grid-row: 3/6;
-    display: flex;
-    flex-direction: column;
+@media only screen and (max-width:480px){
+    .footer-div-main{
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        background-image: url(images/Rectangle\ 39.png);
+        background-size: 4000px;
+        background-repeat: no-repeat;
+        padding: 30px;
+    }
+    .footer-left-div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 30px;
+        flex-wrap: wrap;
+    
+    }
 }
-
-.div-footer-form img{
-    width: 10%;
+@media only screen and (min-width:481px) and (max-width:768px) {
+    .footer-div-main{
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        background-image: url(images/Rectangle\ 39.png);
+        background-size: 4000px;
+        background-repeat: no-repeat;
+        padding: 30px;
+    }
+    .footer-left-div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 30px;
+        flex-wrap: wrap;
+        
+    
+    }
 }
