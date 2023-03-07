@@ -232,7 +232,7 @@ body{
 }
 @media screen and (max-width:1307px) {
     .acerca-de-nosotros{
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
         align-items: center;
         justify-content: center;
