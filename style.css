@@ -543,6 +543,7 @@ body{
     color: #fff;
     background-image: url(images/Rectangle\ 39.png);
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 30px;
 }
 
