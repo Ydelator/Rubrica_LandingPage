@@ -121,6 +121,7 @@ body{
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .container-home-1{
     width: 37%;
